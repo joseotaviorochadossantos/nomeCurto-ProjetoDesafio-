@@ -2,22 +2,132 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Minha Escola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colégio Estadual Governador Adolpho de Oliveira Franco</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Minha Escola</h1>
+  <header>
+    <h1>Colégio Estadual Governador Adolpho de Oliveira Franco</h1>
+    <p>Conheça nossa escola, modalidades de ensino e formas de contato</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#modalidades">Modalidades</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contato">Contato</a>
+      <a href="#redes">Redes</a>
+    </nav>
+  </header>
 
-  <h2>Sobre</h2>
-  <p>Bem-vindo ao site da nossa escola.</p>
+  <main>
+    <section id="sobre">
+      <h2>Sobre a Escola</h2>
+      <p>O Colégio Estadual Governador Adolpho de Oliveira Franco está localizado em Astorga, Paraná. A escola oferece ensino de qualidade e promove a formação integral dos alunos.</p>
+      <p>Diretor(a): <strong>Marli de Marco</strong></p>
+      <p>O sistema de consulta de escolas do estado do Paraná confirma o registro da escola em Astorga.</p>
+    </section>
 
-  <h2>Cursos</h2>
-  <p>Temos várias opções de cursos para os alunos.</p>
+    <section id="fotos">
+      <h2>Fotos da Escola</h2>
+      <div class="galeria">
+        <img src="exibirFoto.jpg" alt="Pátio coberto da escola">
+        <img src="exibirFoto (1).jpg" alt="Segunda imagem da escola">
+      </div>
+    </section>
 
-  <h2>Contato</h2>
-  <p>Email: escola@exemplo.com</p>
+    <section id="modalidades">
+      <h2>Modalidades de Ensino</h2>
+      <p>Ensino Fundamental e Ensino Médio.</p>
+    
+      <h3>Cursos Oferecidos</h3>
+      <div class="cards-cursos">
+        <div class="card">
+          <h4>Técnicos</h4>
+          <p>Curso técnico em diversas áreas para preparar o aluno para o mercado de trabalho.</p>
+          
+          <!-- Destaque das matérias do curso Técnico -->
+          <div class="curso-detalhe">
+            <h5>Matérias do curso:</h5>
+            <div class="materias-cards">
+              <div class="materia-card">Programação Mobile</div>
+              <div class="materia-card">Banco de Dados</div>
+              <div class="materia-card">Computação Gráfica</div>
+              <div class="materia-card">Análise e Projeto de Sistema</div>
+              <div class="materia-card">Programação Back End</div>
+              <div class="materia-card">Ciência de Dados</div>
+              <div class="materia-card">Programação Desenvolvimento de Sistema</div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <h4>Agro</h4>
+          <p>Curso voltado para agricultura, agropecuária e tecnologias do campo.</p>
+        </div>
+      </div>
+    </section>
 
-  <p>© 2025 Minha Escola</p>
+    <section id="curso-tecnico">
+      <h2>Sobre o Curso Técnico</h2>
+      <div class="quadro-curso">
+        <div class="topico">
+          <h3>Objetivo</h3>
+          <p>Preparar o aluno para atuar no mercado de tecnologia com conhecimentos práticos e teóricos em desenvolvimento de sistemas, banco de dados, programação mobile e ciência de dados.</p>
+        </div>
+    
+        <div class="topico">
+          <h3>Matérias</h3>
+          <ul>
+            <li>Programação Mobile</li>
+            <li>Banco de Dados</li>
+            <li>Computação Gráfica</li>
+            <li>Análise e Projeto de Sistema</li>
+            <li>Programação Back End</li>
+            <li>Ciência de Dados</li>
+            <li>Programação e Desenvolvimento de Sistema</li>
+          </ul>
+        </div>
+    
+        <div class="topico">
+          <h3>Carga Horária</h3>
+          <p>O curso possui duração de 1800 horas distribuídas em 3 anos, com aulas teóricas e práticas.</p>
+        </div>
+    
+        <div class="topico">
+          <h3>Habilidades Desenvolvidas</h3>
+          <ul>
+            <li>Desenvolvimento de aplicativos móveis</li>
+            <li>Criação e manutenção de bancos de dados</li>
+            <li>Modelagem de sistemas e projetos de software</li>
+            <li>Programação back end e front end</li>
+            <li>Análise e interpretação de dados</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section id="contato">
+      <h2>Informações de Contato</h2>
+      <p><strong>Endereço:</strong> Rua São Sebastião, 320 - Astorga, PR</p>
+      <p><strong>Telefone:</strong> (44) 3234-7076</p>
+      <p><strong>E-mail:</strong> <a href="mailto:atgadolphofranco@seed.pr.gov.br">atgadolphofranco@seed.pr.gov.br</a></p>
+    </section>
+
+    <section id="redes">
+      <h2>Redes Sociais</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Colégio Estadual Governador Adolpho de Oliveira Franco - Desenvolvido por Zé</p>
+  </footer>
 
 </body>
 </html>

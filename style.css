@@ -1,0 +1,172 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  header p {
+    margin: 5px 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Conteúdo */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Galeria de fotos */
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .galeria img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  /* Responsividade */
+  @media(max-width: 600px){
+    .galeria img {
+      width: 100%;
+    }
+    header h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  /* Cards dentro de Modalidades */
+.cards-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .card {
+    background: #f0f8ff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h4 {
+    margin-top: 0;
+    color: #004aad;
+  }
+/* Destaque das matérias do curso Técnico */
+.curso-detalhe {
+    margin-top: 10px;
+    background: #e6f0ff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .curso-detalhe h5 {
+    margin-top: 0;
+    color: #004aad;
+    font-size: 1em;
+  }
+  
+  /* Mini-cards para cada matéria */
+  .materias-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .materia-card {
+    background: #cce0ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+/* Quadro detalhado do Curso Técnico */
+.quadro-curso {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .topico {
+    background: #cce0ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .topico h3 {
+    margin-top: 0;
+    color: #004aad;
+  }
+  
+  /* Responsividade para celular */
+  @media(max-width: 700px){
+    .quadro-curso {
+      grid-template-columns: 1fr;
+    }
+  }
+      
+  
