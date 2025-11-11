@@ -106,6 +106,8 @@
         </div>
       </div>
     </section>
+
+ 
     
     
         <div class="acessibilidade" role="toolbar" aria-label="Opções de acessibilidade">
@@ -114,9 +116,9 @@
           <button id="toggle-contrast" aria-label="Ativar alto contraste">🎨 Contraste</button>
           <button id="toggle-dark" aria-label="Alternar entre modo claro e escuro">🌙 Escuro</button>
         </div>
-
-
+        
 <script>
+
   // Controle de fonte
   let fontSize = 100;
   document.getElementById('increase-font').addEventListener('click', () => {
@@ -163,6 +165,36 @@
       </ul>
     </section>
   </main>
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>Preencha o formulário abaixo para enviar uma mensagem para a escola:</p>
+  
+    <form class="form-contato" action="mailto:atgadolphofranco@seed.pr.gov.br" method="post" enctype="text/plain">
+      <div class="campo">
+        <label for="nome">👤 Nome:</label>
+        <input type="text" id="nome" name="Nome" placeholder="Seu nome completo" required>
+      </div>
+  
+      <div class="campo">
+        <label for="email">📧 E-mail:</label>
+        <input type="email" id="email" name="Email" placeholder="seuemail@exemplo.com" required>
+      </div>
+  
+      <div class="campo">
+        <label for="assunto">📌 Assunto:</label>
+        <input type="text" id="assunto" name="Assunto" placeholder="Ex: Dúvida sobre matrícula" required>
+      </div>
+  
+      <div class="campo">
+        <label for="mensagem">💬 Mensagem:</label>
+        <textarea id="mensagem" name="Mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+      </div>
+  
+      <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+    </form>
+  </section>
+  
 
   <footer>
     <p>© 2025 Colégio Estadual Governador Adolpho de Oliveira Franco - Desenvolvido por Zé</p>

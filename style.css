@@ -234,3 +234,87 @@ header {
 .high-contrast a {
   color: cyan !important;
 }
+
+/* Formulário de Contato */
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f0f8ff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.form-contato .campo {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato label {
+  font-weight: bold;
+  color: #004aad;
+  margin-bottom: 5px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 5px rgba(0,74,173,0.4);
+  outline: none;
+}
+
+.btn-enviar {
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-enviar:hover {
+  background: #003580;
+  transform: scale(1.03);
+}
+
+/* Compatível com modo escuro */
+.dark-mode .form-contato {
+  background: #1e1e1e;
+  color: #f4f4f4;
+}
+
+.dark-mode .form-contato input,
+.dark-mode .form-contato textarea {
+  background: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.dark-mode .form-contato input:focus,
+.dark-mode .form-contato textarea:focus {
+  border-color: #66aaff;
+}
+
+.dark-mode .btn-enviar {
+  background: #66aaff;
+  color: #000;
+}
+
+.dark-mode .btn-enviar:hover {
+  background: #99ccff;
+}
+
